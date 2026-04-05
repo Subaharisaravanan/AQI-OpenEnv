@@ -1,0 +1,19 @@
+name: AQI Mobile Monitoring Env
+version: 1.0
+description: AI agent environment for controlling urban air pollution
+entrypoint: app:app
+
+observation_space:
+  avg_aqi: int
+  budget: int
+  time: int
+
+action_space:
+  type: string
+
+reward_range: [0.0, 1.0]
+
+tasks:
+  - name: easy
+  - name: medium
+  - name: hard
