@@ -1,0 +1,16 @@
+[project]
+name = "aqi-openenv"
+version = "0.1.0"
+description = "AQI Open Environment API"
+authors = [
+    { name = "Subahari" }
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "numpy"
+]
+
+[tool.openenv]
+entry_point = "inference.py"
